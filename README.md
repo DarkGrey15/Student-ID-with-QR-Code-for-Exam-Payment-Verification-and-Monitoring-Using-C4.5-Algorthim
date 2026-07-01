@@ -6,6 +6,11 @@ This repository contains the full-stack architecture, source files, and database
 ## System Topology & Multi-Language Pipeline
 The system is engineered as a cross-platform integration tying physical hardware tokens to an analytical backend:
 
+## Team Credits & Role Architecture
+This system was built by a collaborative 3-person engineering team:
+* **Joshua Abelay Tuburan (Lead Database Architect):** Designed, normalized, and deployed the MySQL relational database layer; engineered high-precision financial tracking systems and relational data piping.
+* **UI/UX Developer:** Engineered the administrative desktop suite and edge scanning client interfaces using Delphi.
+* **Backend Developer:** Developed the algorithmic logic pipeline and decision routing using Python and the C4.5 framework.
 1. **Management & Data Ingestion (Delphi):** A high-performance desktop administration suite handles student registration, financial ledger management, and programmatic QR code generation.
 2. **Relational Data Layer (MySQL):** Administrative actions securely pipe data into a normalized schema (`school_db`) across three main entities: `students`, `student_fees`, and `student_payments` using restricted, non-root system users.
 3. **Physical Token Generation:** The system translates the primary key (`STUDENT_ID`) into a physical, high-density data matrix printed directly onto the student ID badge.
